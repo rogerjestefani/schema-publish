@@ -1,0 +1,35 @@
+{
+    "id": "poc-data-platform-01",
+    "title": "poc-data-platform-01",
+    "description": "poc-data-platform-01",
+    "meta": {
+        "source_host": "poc-data-platform-source-01",
+        "source_format": "parquet",
+        "source_holder": "data-platform",
+        "source_db": "",
+        "source_table": "",
+        "ingestion_type": "complete",
+        "ingestion_frequency": 3600,
+        "activated_data": true,
+        "restricted_data": false,
+        "topic_name": "poc-data-platform",
+        "topic_env": "staging"
+    },
+    "schema_contract": [
+        {
+            "field_name": "field_id",
+            "field_type": "integer",
+            "field_description": "identificador unico"
+        },
+        {
+            "field_name": "field_name",
+            "field_type": "string",
+            "field_description": "Nome do campo"
+        },
+        {
+            "field_name": "field_active",
+            "field_type": "boolean",
+            "field_description": "Campo booleano"
+        }
+    ]
+}
